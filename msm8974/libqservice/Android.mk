@@ -13,9 +13,7 @@ LOCAL_HEADER_LIBRARIES        := generated_kernel_headers
 LOCAL_SRC_FILES               := QService.cpp \
                                  IQService.cpp \
                                  IQClient.cpp
-LOCAL_COPY_HEADERS_TO         := $(common_header_export_path)
-LOCAL_COPY_HEADERS            := IQService.h \
-                                 IQClient.h
+LOCAL_EXPORT_C_INCLUDE_DIRS   := $(LOCAL_PATH)
 
 
 include $(BUILD_SHARED_LIBRARY)
